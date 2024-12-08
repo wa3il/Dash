@@ -141,7 +141,7 @@ def update_graphs(selected_year, selected_date):
     # Graphique PCA
     pca_fig = px.scatter(
         filtered_df, x='PCA1', y='PCA2', color='Cluster', hover_name='country',
-        title=f"PCA et Clustering pour l'année {selected_year}"
+        title=f"l'influence des 4 parametres : GDP per Capita et Kilotons of CO2, life_exp et population pour l'année {selected_year} "
     )
 
     # Bar Chart
