@@ -40,6 +40,7 @@ df_map = df_origin.merge(df_coords_cleaned, on='Country', how='left')
 
 # App Dash
 app = Dash(__name__)
+server = app.server
 
 # App Dash avec design amélioré
 app.layout = html.Div([
